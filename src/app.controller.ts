@@ -1,11 +1,12 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
+import { AppParser } from './app.parser';
+import { ParsedData } from 'nest-csv-parser';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly appParser: AppParser) {}
 
-<<<<<<< HEAD
   @Post()
   async getHello(
     @Body('inicio') fechaIni: string,
@@ -19,10 +20,5 @@ export class AppController {
 
     return a;
     
-=======
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
->>>>>>> parent of 11016bc (Progreso! Puedo leer el csv en 3 segundos.)
   }
 }
