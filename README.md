@@ -6,68 +6,36 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+ 
+# Tarea práctica Cotalker back.
 
-## Description
+## Instrucciones para correrlo en consola.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### En primer lugar, es importante señalar que los datos se obtendrán directamente a partir del archivo .csv entregado. Es por ello que es necesario que usted agregue el archivo "log.practica.2.csv" a la carpeta raíz del código fuente. (el mismo lugar donde se encuentra este README.md)
 
-## Installation
+### Una vez añadido el archivo, dentro de la consola en la carpeta raíz deberá correr el comando "npm install" para poder instalar los componentes necesarios para su uso.
 
-```bash
-$ npm install
+### Una vez finalizado el proceso de instalación, deberá correr el comando "npm run start" para poder desplegar el back-end en la URL http://localhost:3000/
+
+### Cuando ya esté lista la carga, podrá a continuación realizar el despliegue por el lado front-end.
+
+## Método HTTP Post
+
+### En este caso se considera el llamado al método POST en la url http://localhost:3000/ para poder obtener los datos a mostrar en el front-end. Un ejemplo del Body es el siguiente:
+
+```json
+{
+  "inicio": "2018-1-1",
+  "fin": "2018-5-1",
+  "usuarios": "-1",
+  "compania": "2",
+  "intervalo": 60
+}
 ```
 
-## Running the app
+## Consideraciones sobre el desarrollo
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+### Por temas de tiempo debido al fin de año, fin de semestre y aprendizaje de una herramienta y lenguaje donde no tenía muy poca experiencia, no se implementaron algunos aspectos importantes con respecto a buenas prácticas de desarrollo de código. Sin embargo, se logró cumplir con lo solicitado. Entre lo faltante se encuentra:
+* El manejo de errores cuando se realiza mal una petición.
+* Una posible indagación más extensa para implementar un algoritmo más eficiente que el uso de expresiones regulares para leer el .csv.
+* El traspaso de la data del .csv a un formato externo dentro de una base de datos para facilitar la consulta de datos.
