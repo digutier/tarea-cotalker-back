@@ -113,7 +113,6 @@ export class AppParser {
       let formatAct = diaAct.toString() + ' ' + mesAct + ' ' + anioAct.toString();
       graphData[formatAct] = graphData[formatAct] + 1;
     }
-    //console.log(Object.keys(graphData));
     return graphData;
   }
 }

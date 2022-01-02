@@ -1,7 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { AppService } from './app.service';
 import { AppParser } from './app.parser';
-import { ParsedData } from 'nest-csv-parser';
 
 @Controller()
 export class AppController {
