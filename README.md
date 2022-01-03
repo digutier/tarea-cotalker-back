@@ -35,7 +35,7 @@
 
 ## Consideraciones sobre el desarrollo
 
-### Por temas de tiempo debido al fin de año, fin de semestre y aprendizaje de una herramienta y lenguaje donde no tenía muy poca experiencia, no se implementaron algunos aspectos importantes con respecto a buenas prácticas de desarrollo de código. Sin embargo, se logró cumplir con lo solicitado. Entre lo faltante se encuentra:
+### Por temas de tiempo debido al fin de año, fin de semestre y aprendizaje de una herramienta y lenguaje donde tenía muy poca experiencia, no se implementaron algunos aspectos importantes con respecto a buenas prácticas de desarrollo de código. Sin embargo, se logró cumplir con lo solicitado. Entre lo faltante se encuentra:
 * El manejo de errores cuando se realiza mal una petición.
 * Una posible indagación más extensa para implementar un algoritmo más eficiente que el uso de expresiones regulares para leer el .csv.
 * El traspaso de la data del .csv a un formato externo dentro de una base de datos para facilitar la consulta de datos.
